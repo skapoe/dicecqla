@@ -144,7 +144,7 @@ class KGE(BaseInteractiveKGE):
             assert relations is not None
             assert tail_entities is not None
             # ? r, t
-            scores = self.__predict_missing_head_entity(relations, tail_entities)
+            scores = self.predict_missing_head_entity(relations, tail_entities)
         # (3) Predict missing relation given a head entity and a tail entity.
         elif relations is None:
             assert head_entities is not None
@@ -156,7 +156,7 @@ class KGE(BaseInteractiveKGE):
             assert head_entities is not None
             assert relations is not None
             # h r ?
-            scores = self.__predict_missing_tail_entity(head_entities, relations)
+            scores = self.predict_missing_tail_entity(head_entities, relations)
         else:
             assert len(head_entities) == len(relations) == len(tail_entities)
             scores = self.triple_score(head_entities, relations, tail_entities)
