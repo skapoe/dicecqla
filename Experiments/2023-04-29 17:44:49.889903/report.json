@@ -1,9 +1,0 @@
-{
-    "num_train_triples": 10432,
-    "num_entities": 135,
-    "num_relations": 92,
-    "EstimatedSizeMB": 0.0148468017578125,
-    "NumParam": 15544,
-    "path_experiment_folder": "/Users/sourabh/dice-embeddings/Experiments/2023-04-29 17:44:49.889903",
-    "Runtime": 29.209228038787842
-}
